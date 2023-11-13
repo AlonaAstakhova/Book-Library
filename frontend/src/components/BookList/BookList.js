@@ -9,9 +9,9 @@ const BookList = () => {
       {books.length === 0 ? (
         <p>No books avaliable</p>
       ) : (
-        <ul>
+        <ul> 
           {books.map((book, i) => (
-            <li key={i}>
+            <li key={book.id}>
               <div className="book-info">
                 {++i}. {book.title} by <strong>{book.author}</strong>
               </div>
