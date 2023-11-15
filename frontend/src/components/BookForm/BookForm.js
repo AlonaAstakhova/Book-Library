@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { addBook } from '../../redux/books/actionCreators'
+import { addBook } from '../../redux/slices/booksSlice.js'
 import booksData from '../../data/books.json'
 import createBookWithID from '../../utils/createBookWithID.js'
 import './BookForm.css'
