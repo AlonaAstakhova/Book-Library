@@ -12,11 +12,13 @@ function getRandomBook() {
   return randomBook
 }
 app.get('/random-book', (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
   res.json(getRandomBook())
 })
 
 app.get('/random-book-delayed', (req, res) => {
   setTimeout(() => {
+    res.set('Access-Control-Allow-Origin', '*')
     res.json(getRandomBook())
   }, 2000)
 })
